@@ -1,0 +1,395 @@
+body{
+    background: #e5e5e5;
+    font-family: Roboto;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1;
+}
+h1{
+   font-size: 25px;
+   font-weight: 600;
+}
+.wraper{
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.page{
+   flex: 1 1 auto;
+}
+[class*="__container"]{
+   /* border: 1px solid #000000; */
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+@media (max-width: 1209.98px){
+   [class*="__container"]{
+      max-width: 1080px;
+   }
+}
+@media (max-width: 997.98px){
+   [class*="__container"]{
+      max-width: none;
+   }
+}
+@media (max-width: 767.98px){
+   [class*="__container"]{
+      max-width: none;
+   }
+}
+.header{
+   background: #ffffff;
+}
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   min-height: 90px;
+   align-items: center;
+   /* padding: 20px 10px; */
+}
+
+.header__menu {}
+.header__profile {
+   display: flex;
+   align-items: center;
+}
+
+.menu {}
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 44px;
+}
+.menu__item {     
+}
+.menu__link {
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: inherit;
+   width: 212px;
+   height: 50px;
+   border: 1px solid #dbdbdb;
+   border-radius: 5px;
+}
+.menu__link:hover{
+   border-color: #F2AE4B;
+   box-shadow: 0 0 10px rgba(60, 84, 117, 15%);
+   color: #F2AE4B;
+   transition: all 0.3s;
+}
+@media (max-width: 1209.98px){
+   .menu__item{
+   }
+   .menu__list{
+      gap: 10px;
+   }
+   .menu__link{
+      width: 180px;
+   }
+   
+}
+.menu__link.active{
+   background: linear-gradient(90deg, #255390, #162970);
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   color: #ffffff;
+}
+.menu__link.active:hover{
+   color: #F2AE4B;
+   transition: all 0.3s;
+}
+
+.profile {}
+.profile__photo {
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+}
+.profile__name {
+   padding-left: 10px;
+   color: #828282;
+}
+
+/* =============================== */
+
+.page__container{
+   margin-top: 24px;
+   
+}
+.page__header{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 25px;
+}
+.page__header-content{
+   display: flex;
+   align-items: center;
+   gap: 42px;
+}
+.ticker__item{
+   display: flex;
+   align-items: center;
+   opacity: .5;
+}
+.ticker__item:hover{
+   opacity: 1;
+   transition: opacity 0.3s;
+}
+.ticker__item img{
+   margin-right: 6px;
+}
+.ticker__list{
+   display: flex;
+   gap: 25px;
+}
+p.ticker__text{
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+}
+.ticker__text > span.money{
+   font-size: 25px;
+   font-weight: 400;
+   margin-left: 8px;
+}
+.page__btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(90deg, #255390, #162970);
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   color: #ffffff;
+   border-radius: 20px;
+   padding: 13px 37px;
+}
+.page__btn:hover{
+   color:#F2AE4B;
+   transform: translateY(-2px);
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   transition: all 0.3s;
+}
+/* =================== */
+.page__cards{
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+   gap: 26px;
+}
+.cards__item{
+   width: 290px;
+   position: relative;
+}
+.cards__content{
+   border: 1px solid #F2AE4B;
+   border-radius: 5px;
+   background: #ffffff;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   margin-bottom: 13px;
+}
+.main-card::after{
+   content: "";
+   width: 30px;
+   height: 30px;
+   background: url("/img/cards-more-icon.svg") no-repeat;   
+   top: 16px;
+   right: 8px;
+   position: absolute;
+   display: inline-block;
+}
+.main-card:hover::after{
+   cursor: pointer;
+   transform: translateY(2px);
+   /* box-shadow:  0 0 15px rgba(60, 84, 117, 15%); */
+   transition: all 0.3s;
+}
+.cards__header{
+   font-size: 16px;
+   color: #828282;
+   padding-bottom: 11px;
+}
+.cards__wraper{
+   padding: 18px 25px;
+}
+.crypto__wraper{
+   display: flex;
+   justify-content: space-between;
+   padding: 16px 21px 15px;
+}
+.crypto__content{
+   border: 1px solid #ffffff;
+   border-radius: 5px;
+   background: #ffffff;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   margin-bottom: 13px;
+}
+.crypto__content:hover{
+   border-color: #F2AE4B;
+}
+.cards__currency{
+   position: relative;
+}
+.currency-text::before{
+   content: "";
+   width: 7px;
+   height: 7px;
+   background: #2F80ED;   
+   border-radius: 50%;
+   top: 9px;
+   left: 0;
+   position: absolute;
+   display: inline-block;
+}
+p.currency-text{
+   margin-left: 13px;
+   font-size: 24px;
+   font-weight: 800;
+}
+p.hash-text{
+   margin-left: 10px;
+   font-size: 24px;
+   font-weight: 800;
+}
+p.currency-text > span, p.hash-text > span{
+   font-size: 14px;
+   margin-left: 6px;
+}
+p.usd-text{
+   margin-top: 11px;
+   color: #4F4F4F;
+   font-weight: 800;
+}
+p.coin-text{
+   margin-top: 13px;
+   color: #4F4F4F;
+   font-weight: 800;
+}
+.cards__btn{
+   display: flex;
+   justify-content: space-between;
+}
+a.binance-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #ffffff;
+   border: 1px solid #F2AE4B;
+   border-radius: 5px;
+   min-width: 143px;
+   height: 36px;
+   padding: 6px;
+}
+a.binance-btn:hover, a.buy-btn:hover{
+   transform: translateY(-2px);
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   transition: all 0.3s;
+}
+a.buy-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #00D56E;
+   border-radius: 5px;
+   max-width: 143px;
+   height: 36px;
+   padding: 6px;
+   background: #00D56E;
+}
+.cards__footer{
+   background: #ffffff;
+   border-radius: 5px;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   padding: 10px;
+}
+.cards__footer-content{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.cards__footer-content p{
+   font-weight: 500;
+}
+.cards__footer-content span{
+   color:#828282;
+   font-size: 12px;
+}
+.cards__hash{
+   display: flex;
+   align-items: center;
+}
+/* ======= wallet ========== */
+
+.wallet__container{
+   display: flex;
+   gap: 37px;
+   padding: 0;
+   margin: 40px 0;
+}
+.wallet__item{}
+.wallet__title{
+   margin-bottom: 10px;
+   position: relative;
+   font-size: 14px;
+   color: #828282;
+   font-weight: 500;
+}
+.green-dot::before, .blue-dot::before, .orange-dot::before{
+   content: "";
+   width: 7px;
+   height: 7px;
+   background: #27AE60;   
+   border-radius: 50%;
+   top: 32px;
+   left: 0;
+   position: absolute;
+   display: inline-block;
+}
+.blue-dot::before{
+   background: #2F80ED;
+}
+.orange-dot::before{
+   background: #F2AE4B;
+}
+
+.wallet__costs p{
+   color:#000000;
+   font-weight: 700;
+   font-size: 25px;
+   padding-left: 13px;
+}
+.wallet__costs span{
+   color: #828282;
+   font-size: 12px;
+}
+
+/* ======== balgraph ========= */
+
+.balgraph{}
+.balgraph__content{
+   display: flex;
+}
+.balance{
+   max-width: 915px;
+   
+}
+.balance__title{
+   margin-bottom: 10px;
+}
+p.balance__text{
+   font-size: 15px;
+   font-weight: normal;
+   color:#828282;
+}
+.balance__content{
+   background: #ffffff;
+   border-radius: 5px;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   padding: 20px;
+}
+.prediction{}
+.prediction__title{}
+.prediction__text{}
+.prediction__icon{}
+.prediction__content{}
