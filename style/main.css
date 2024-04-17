@@ -369,15 +369,18 @@ a.buy-btn{
 .balgraph{}
 .balgraph__content{
    display: flex;
+   flex-wrap: wrap;
+   gap:25px;
 }
 .balance{
-   max-width: 915px;
+   max-width: 912px;
+   width: 100%;
    
 }
 .balance__title{
    margin-bottom: 10px;
 }
-p.balance__text{
+p.balance__text, p.prediction__text{
    font-size: 15px;
    font-weight: normal;
    color:#828282;
@@ -387,9 +390,51 @@ p.balance__text{
    border-radius: 5px;
    box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
    padding: 20px;
+  
 }
-.prediction{}
-.prediction__title{}
-.prediction__text{}
-.prediction__icon{}
-.prediction__content{}
+.prediction{
+   max-width: 303px;
+   width: 100%;
+}
+.prediction__content{
+   background: #ffffff;
+   border-radius: 5px;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   padding: 24px 13px 20px 20px;
+}
+.prediction__title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 7px;
+}
+.prediction__icon{
+   width: 18px;
+}
+.prediction__item{
+   margin-bottom: 18px;
+
+}
+.prediction__term{
+   color:#828282;
+   font-weight: 700;
+   font-size: 14px;
+}
+.prediction__value{
+   font-weight: 700;
+   font-size: 18px;
+   padding: 10px 0 0 12px;
+   position: relative;
+}
+.prediction__value::before{
+   content: "";
+   width: 5px;
+   height: 5px;
+   background: #255390;   
+   border-radius: 50%;
+   top: 16px;
+   left: 0;
+   position: absolute;
+   display: inline-block;
+
+}
