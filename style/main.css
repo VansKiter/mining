@@ -1,5 +1,5 @@
 body{
-    background: #e5e5e5;
+    background: #F6F7FB;
     font-family: Roboto;
     color: #000000;
     font-size: 14px;
@@ -438,3 +438,109 @@ p.balance__text, p.prediction__text{
    display: inline-block;
 
 }
+
+.statistics{margin-top: 30px;}
+.statistics__content{}
+.stats{}
+.stats__title{}
+p.stats__text{
+   font-size: 15px;
+   font-weight: normal;
+   color:#828282;
+}
+.stats__list{
+   margin-top: 14px;
+   display: flex;
+   gap: 32px;
+}
+.stats__item{
+   border: 1px solid #e0e0e0;
+   padding: 13px 20px;
+   border-radius: 5px;
+   color:#828282;
+}
+.stats__btn{
+   font-size: 17px;
+}
+.stats-active{
+   background: #ffffff;
+   border-color: #ffffff;
+   font-weight: 700;
+}
+.stats-active > p{
+   color: #255390;
+}
+.stats__item:hover{
+   cursor: pointer;
+   background: #ffffff;
+   color:#255390;
+   font-weight: 700;
+   border-color: #255390;
+}
+.stats__table{
+   width: 915px;
+   margin-top: 19px;
+   background: #ffffff;
+   box-shadow:  0 0 15px rgba(60, 84, 117, 15%);
+   color: #4F4F4F;
+   border-radius: 5px;
+   padding: 18px 21px 0 31px;
+}
+.stats__table table{
+   padding: 20px;
+   border-collapse: collapse;
+}
+.stats__table th{
+   color: #828282;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+}
+.stats__table th:hover{
+   cursor: pointer;
+   font-weight: 700;
+}
+.stats__table tr{
+   height: 64px;
+}
+.stats__table tr.theader{
+   height: 32px;
+}
+.stats__table td{
+   border-top: 1px solid #828282;
+   font-size: 15px;
+   font-weight: 700;
+}
+.stats__table th{
+   border-bottom: 1px solid #ffffff;
+}
+span.tbl-active, span.tbl-expire{
+   font-size: 13px;
+   color: #219653;
+   font-weight: 500;
+}
+span.tbl-expire{
+   color: #F2994A;
+}
+span.tbl-money{
+   color: #828282;
+   font-size: 16px;
+   font-weight: normal;
+   margin-left: 30px;
+}
+td.tbl-1col{
+   color: #255390;
+   width: 250px;
+}
+td.tbl-2col{
+   width: 162px;
+}
+td.tbl-3col{
+   width: 203px;
+}
+td.tbl-4col{
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.mycontacts{}
