@@ -41,6 +41,7 @@ h1{
 }
 .header{
    background: #ffffff;
+   box-shadow: 0 0 10px rgba(60, 84, 117, 15%);
 }
 @media (max-width: 963.98px){
    .header{
